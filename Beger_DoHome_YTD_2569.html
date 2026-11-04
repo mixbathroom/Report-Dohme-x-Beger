@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="th" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beger × DoHome YTD 2569</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap">
+<style>
+/* Layout: executive scroll story — hero KPIs, then 5 chapters (trend, share, branches, product groups, products), closing talking points */
+:root{
+  --bg:#f3f5f9; --card:#ffffff; --ink:#152033; --muted:#5d687c; --line:#e1e6ee; --soft:#eef2f8;
+  --beger:#1d4f9c; --beger-2:#7aa0d8; --beger-3:#c9d7ee;
+  --dh:#e0611a; --dh-soft:#fdeee4;
+  --up:#17885a; --up-soft:#e1f3ea; --down:#c8432b; --down-soft:#fbe6e1;
+  --y24:#c3cad6; --y25:#8794aa; --new:#fff1b3; --new-ink:#7a5b00; --main:#1d4f9c; --note:#e6eefa;
+  --display:"Bai Jamjuree","IBM Plex Sans Thai","Leelawadee UI",Tahoma,sans-serif;
+  --body:"IBM Plex Sans Thai","Leelawadee UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1622; --card:#172131; --ink:#e8edf5; --muted:#9aa6ba; --line:#263247; --soft:#1e2a3d;
+  --beger:#6f9fe6; --beger-2:#4b74b3; --beger-3:#2c4670; --dh:#f08a4b; --dh-soft:#3a2618;
+  --up:#4cc48c; --up-soft:#173527; --down:#f07a63; --down-soft:#3a1f1a; --y24:#3a475c; --y25:#66748c; --new:#4a3d0c; --new-ink:#ffd95a; --main:#244f92; --note:#1d2d48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1622; --card:#172131; --ink:#e8edf5; --muted:#9aa6ba; --line:#263247; --soft:#1e2a3d;
+  --beger:#6f9fe6; --beger-2:#4b74b3; --beger-3:#2c4670; --dh:#f08a4b; --dh-soft:#3a2618;
+  --up:#4cc48c; --up-soft:#173527; --down:#f07a63; --down-soft:#3a1f1a; --y24:#3a475c; --y25:#66748c; --new:#4a3d0c; --new-ink:#ffd95a; --main:#244f92; --note:#1d2d48; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+.num{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;line-height:1.25}
+/* hero */
+.hero{display:flex;flex-direction:column;gap:18px}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--beger)}
+.eyebrow b{color:var(--dh)}
+h1{font-size:clamp(26px,4vw,40px);font-weight:700}
+.lede{color:var(--muted);max-width:68ch;margin:0}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kpi.main{background:var(--main);border-color:var(--main);color:#fff}
+.kpi .lab{font-size:13px;color:var(--muted);font-weight:500}
+.kpi.main .lab,.kpi.main .sub{color:rgba(255,255,255,.82)}
+.kpi .val{font-family:var(--display);font-size:34px;font-weight:700;line-height:1.05}
+.kpi .val small{font-size:15px;font-weight:600;margin-left:4px}
+.kpi .sub{font-size:13px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:1px 9px;font-size:13px;font-weight:600}
+.chip.up{background:var(--up-soft);color:var(--up)} .chip.down{background:var(--down-soft);color:var(--down)}
+.kpi.main .chip.up{background:rgba(255,255,255,.18);color:#fff}
+.meter{height:8px;background:var(--soft);border-radius:99px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--dh);border-radius:99px}
+/* chapters */
+.chapter{display:flex;flex-direction:column;gap:14px}
+.chead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-top:2px solid var(--ink);padding-top:12px}
+.chead .no{font-family:var(--display);font-weight:700;color:var(--dh);font-size:15px}
+.chead h2{font-size:24px;font-weight:700}
+.chead .src{margin-left:auto;font-size:12.5px;color:var(--muted)}
+.row{display:grid;gap:14px;grid-template-columns:repeat(12,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.s12{grid-column:span 12}.s8{grid-column:span 8}.s7{grid-column:span 7}.s6{grid-column:span 6}.s5{grid-column:span 5}.s4{grid-column:span 4}
+.card h3{font-size:16.5px;font-weight:600}
+.card .hint{font-size:13px;color:var(--muted);margin:0}
+.cv{position:relative;width:100%}
+.insight{background:var(--note);border-radius:10px;padding:10px 14px;font-size:14px;line-height:1.55}
+.insight b{color:var(--ink)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+/* share stacked */
+.stack{display:flex;flex-direction:column;gap:10px}
+.srow{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:center;font-size:13px}
+.sbar{display:flex;height:30px;border-radius:7px;overflow:hidden}
+.sbar div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden}
+/* branch bars */
+.blist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 26px}
+.br{display:grid;grid-template-columns:168px 1fr 56px;gap:8px;align-items:center;font-size:13.5px;min-width:0}
+.br .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.br .tr{position:relative;height:16px}
+.br .tr::before{content:"";position:absolute;left:30%;top:-3px;bottom:-3px;width:1px;background:var(--line)}
+.br .b{position:absolute;top:2px;height:12px;border-radius:3px}
+.br .v{text-align:right;font-weight:600}
+.tag{font-size:10.5px;font-weight:600;color:var(--new-ink);border-radius:4px;padding:0 4px;margin-left:4px}
+.star{color:var(--dh);font-weight:700;margin-right:2px}
+.mc{color:var(--muted);font-size:11px}
+.br .nb{grid-column:2 / 4;font-size:12.5px;color:var(--muted);min-width:0}
+/* product dumbbell */
+.dumb{display:flex;flex-direction:column;gap:8px}
+.dr{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,2fr) 128px;gap:12px;align-items:center;font-size:13.5px}
+.dr .nm{min-width:0;line-height:1.3}
+.dr .tr{position:relative;height:18px}
+.dr .ln{position:absolute;top:8px;height:3px;background:var(--beger-3);border-radius:2px}
+.dr .d1,.dr .d2{position:absolute;top:3px;width:13px;height:13px;border-radius:50%;margin-left:-6.5px}
+.dr .d1{background:var(--y25)} .dr .d2{background:var(--beger)}
+.dr .gs{display:flex;gap:6px;justify-content:flex-end}
+.gpill{font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;white-space:nowrap}
+.gpill.up{background:var(--up-soft);color:var(--up)} .gpill.down{background:var(--down-soft);color:var(--down)} .gpill.na{background:var(--soft);color:var(--muted)}
+/* movers */
+.mv{display:flex;flex-direction:column;gap:7px}
+.mr{display:grid;grid-template-columns:minmax(0,1fr) 120px 54px;gap:10px;align-items:center;font-size:13.5px}
+.mr .nm{min-width:0;line-height:1.3}
+.mr .tr{height:14px;background:var(--soft);border-radius:4px;position:relative;overflow:hidden}
+.mr .tr i{position:absolute;top:0;bottom:0;border-radius:4px}
+.mr .v{text-align:right;font-weight:600}
+.badge{font-size:10.5px;font-weight:700;color:var(--dh);margin-left:4px}
+.grow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;align-items:center;font-size:13.5px}
+.hb{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr) 156px;gap:12px;align-items:center;font-size:13.5px}
+.hb .nm{min-width:0;line-height:1.3}
+.hb .tr{position:relative;height:16px;background:var(--soft);border-radius:4px}
+.hb .tr i{position:absolute;left:0;top:0;bottom:0;background:var(--beger);border-radius:4px}
+.hb .tr u{position:absolute;top:-3px;bottom:-3px;width:3px;margin-left:-1.5px;background:var(--y25);border-radius:2px}
+.hb .tr b{position:absolute;top:-1px;font-size:12px;font-weight:600;white-space:nowrap}
+@media (max-width:520px){.hb{grid-template-columns:minmax(0,1fr) 110px}.hb .tr{grid-column:1 / -1;order:3}}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.theme{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--card)}
+.theme button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--muted);padding:4px 14px;border-radius:999px;cursor:pointer}
+.theme button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:600}
+.theme button:focus-visible{outline:2px solid var(--beger);outline-offset:2px}
+/* talk */
+.talk{background:var(--card);border:2px solid var(--dh);border-radius:16px;padding:20px 22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.talk h3{font-size:16px;color:var(--dh);margin-bottom:8px}
+.talk ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:14.5px}
+.foot{font-size:12.5px;color:var(--muted);line-height:1.6;max-width:110ch}
+@media (max-width:900px){
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .s8,.s7,.s6,.s5,.s4{grid-column:span 12}
+  .blist{grid-template-columns:1fr}
+  .talk{grid-template-columns:1fr}
+  .chead .src{margin-left:0;width:100%}
+}
+@media (max-width:520px){
+  .kpi .val{font-size:28px}
+  .dr{grid-template-columns:minmax(0,1fr) 110px;}
+  .dr .tr{grid-column:1 / -1;order:3}
+  .br{grid-template-columns:96px 1fr 48px}
+  .mr{grid-template-columns:minmax(0,1fr) 70px 50px}
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="topbar"><div class="eyebrow">Beger <b>×</b> DoHome · Year-to-date 2569</div><div class="theme" role="group" aria-label="สีพื้นหลัง"><button type="button" id="thLight" data-t="light">พื้นขาว</button><button type="button" id="thDark" data-t="dark">พื้นดำ</button></div></div>
+    <h1>เบเยอร์ในดูโฮม ปี 2569 โตเร็วกว่าตลาด และโตทั้งยอดเงินและจำนวนชิ้น</h1>
+    <p class="lede">สรุปผลงานสะสมตั้งแต่ต้นปี (YTD) เทียบกับปีก่อน สำหรับการเข้าพบผู้บริหารดูโฮม วันที่ 4 พฤศจิกายน 2569</p>
+    <div class="kpis num" id="kpis"></div>
+  </header>
+
+  <section class="chapter">
+    <div class="chead"><span class="no">01</span><h2>ยอดขายรายเดือนและยอดสะสม</h2><span class="src">Sell-out รายงาน PC · ม.ค.–ก.ย.</span></div>
+    <div class="row">
+      <div class="card s8">
+        <h3>ยอดขายเบเยอร์ในดูโฮมรายเดือน (ล้านบาท)</h3>
+        <div class="legend"><span><i style="background:var(--beger)"></i>2569</span><span><i style="background:var(--y25)"></i>2568</span><span>ป้าย % = โตเทียบเดือนเดียวกันปีก่อน</span></div>
+        <div class="cv" style="height:300px"><canvas id="cTrend" role="img" aria-label="กราฟเส้นยอดขายรายเดือน 2569 เทียบ 2568"></canvas></div>
+      </div>
+      <div class="card s4">
+        <h3>ยอดสะสม ม.ค.–ก.ย. (ล้านบาท)</h3>
+        <div class="cv" style="height:220px"><canvas id="cYtd" role="img" aria-label="กราฟแท่งยอดสะสม 3 ปี"></canvas></div>
+        <div class="insight" id="insTrend"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="chead"><span class="no">02</span><h2>ส่วนแบ่งตลาดในแผนกสี และผลงานรายสาขา</h2><span class="src">Sell-out รายงาน PC · ม.ค.–ก.ย.</span></div>
+    <div class="row">
+      <div class="card s5">
+        <h3>ส่วนแบ่งแผนกสีในดูโฮม</h3>
+        <p class="hint">เฉพาะสาขาที่มีข้อมูลยอดขายคู่แข่ง</p>
+        <div class="stack num" id="share"></div>
+        <div class="legend" id="shareLeg"></div>
+        <div class="insight" id="insShare"></div>
+      </div>
+      <div class="card s7">
+        <h3>การเติบโตรายสาขา YTD เทียบปีก่อน</h3>
+        <p class="hint">เทียบเฉพาะเดือนที่มียอดทั้งสองปี · ตัวเลขด้านขวาคือ % โต · <span class="star">*</span> = สาขาเปิดใหม่ปี 2568 (วงเล็บ = จำนวนเดือนที่เทียบได้)</p>
+        <div class="blist num" id="branches"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="chead"><span class="no">03</span><h2>กลุ่มสินค้า: โตบาท เทียบ โตชิ้น</h2><span class="src">ข้อมูลขายหน้าร้านดูโฮม (รวม VAT) · ม.ค.–ก.ย. 2569 เทียบ 2568</span></div>
+    <div class="row">
+      <div class="card s7">
+        <h3>แต่ละกลุ่มสินค้าอยู่ตรงไหน</h3>
+        <p class="hint">แกนนอน = % โตชิ้น · แกนตั้ง = % โตบาท · ขนาดวงกลม = ยอดขาย 2569 · ชี้ที่วงกลมเพื่อดูชื่อกลุ่มเล็ก · เหนือเส้นทแยง = ยอดเงินโตเร็วกว่าชิ้น (ราคาเฉลี่ยต่อชิ้นสูงขึ้น)</p>
+        <div class="cv" style="height:400px"><canvas id="cBubble" role="img" aria-label="แผนภาพการเติบโตบาทและชิ้นของกลุ่มสินค้า"></canvas></div>
+      </div>
+      <div class="card s5">
+        <h3>ยอดเงินที่เพิ่มขึ้นมาจากกลุ่มไหน</h3>
+        <p class="hint">ส่วนต่างยอดขาย 2569 − 2568 (ล้านบาท)</p>
+        <div class="cv" style="height:400px"><canvas id="cContrib" role="img" aria-label="กราฟแท่งส่วนต่างยอดขายตามกลุ่มสินค้า"></canvas></div>
+      </div>
+      <div class="card s8">
+        <h3>หมวดสินค้า: % โตบาท และ % โตชิ้น</h3>
+        <div class="legend"><span><i style="background:var(--beger)"></i>โตบาท</span><span><i style="background:var(--dh)"></i>โตชิ้น</span></div>
+        <div class="cv" style="height:380px"><canvas id="cCat" role="img" aria-label="กราฟเปรียบเทียบการเติบโตบาทและชิ้นรายหมวด"></canvas></div>
+      </div>
+      <div class="card s4">
+        <h3>เกรดสินค้า</h3>
+        <div class="cv" style="height:200px"><canvas id="cGrade" role="img" aria-label="สัดส่วนยอดขายตามเกรดสินค้า"></canvas></div>
+        <div class="mv num" id="grade"></div>
+        <div class="insight" id="insGrade"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="chead"><span class="no">04</span><h2>รายสินค้า</h2><span class="src">ข้อมูลขายหน้าร้านดูโฮม (รวม VAT) · ม.ค.–ก.ย. 2569 เทียบ 2568</span></div>
+    <div class="row">
+      <div class="card s12">
+        <h3>12 สินค้าขายดีที่สุด และการเติบโต</h3>
+        <div class="legend"><span><i style="background:var(--beger)"></i>ยอดขาย 2569 (ล้านบาท)</span><span><i style="background:var(--y25);width:3px"></i>ระดับปี 2568</span><span>ป้ายด้านขวา: โตบาท · โตชิ้น</span></div>
+        <div class="dumb num" id="top"></div>
+      </div>
+      <div class="card s6">
+        <h3>สินค้าที่ยอดเพิ่มมากที่สุด</h3>
+        <p class="hint">ส่วนต่างยอดขาย (ล้านบาท) · <span style="color:var(--dh);font-weight:600">ใหม่</span> = ไม่มียอดขายช่วงเดียวกันปีก่อน</p>
+        <div class="mv num" id="gain"></div>
+      </div>
+      <div class="card s6">
+        <h3>สินค้าที่ยอดลดลงมากที่สุด</h3>
+        <p class="hint">ส่วนต่างยอดขาย (ล้านบาท)</p>
+        <div class="mv num" id="loss"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="talk">
+    <div>
+      <h3>ขอบคุณและชื่นชม</h3>
+      <ul id="t1"></ul>
+    </div>
+    <div>
+      <h3>สินค้าที่ไปได้ดี</h3>
+      <ul id="t2"></ul>
+    </div>
+    <div>
+      <h3>โอกาสทำงานร่วมกัน</h3>
+      <ul id="t3"></ul>
+    </div>
+  </section>
+
+  <p class="foot">ที่มา: (1) รายงานยอดขาย Sell-out รายสาขาจาก PC ปี 2567–2569 เดือน ม.ค.–ก.ย. ใช้ในบทที่ 01–02 ราคารวม VAT · ส่วนแบ่งตลาดคำนวณจากสาขาที่มีข้อมูลคู่แข่ง ตัวเลขคู่แข่งบางสาขาเป็นค่าประมาณจากหน้าร้าน
+  (2) ข้อมูลยอดขายหน้าร้านดูโฮมรายสินค้า (จากจัดซื้อดูโฮม) ม.ค.–ก.ย. 2568 และ 2569 รวม VAT รวมสาขา To Go ใช้ในการ์ดจำนวนชิ้นและบทที่ 03–04 · จำนวนชิ้นไม่รวมแม่สีเครื่องผสม (หน่วยเป็นปริมาตร) · กลุ่มสินค้าอ้างอิง MKT Group ของเบเยอร์</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const D={
+ "monthly": {
+  "2024": [
+   24.86,
+   25.23,
+   27.94,
+   26.56,
+   27.67,
+   26.26,
+   25.56,
+   25.3,
+   23.82,
+   25.74,
+   21.38,
+   27.12
+  ],
+  "2025": [
+   26.56,
+   25.64,
+   27.21,
+   23.8,
+   23.03,
+   23.12,
+   23.28,
+   22.61,
+   22.6,
+   22.84,
+   21.87,
+   25.85
+  ],
+  "2026": [
+   25.45,
+   25.61,
+   31.63,
+   27.45,
+   27.72,
+   27.46,
+   28.42,
+   27.59,
+   26.25,
+   null,
+   null,
+   null
+  ]
+ },
+ "target26": [
+  31.15,
+  30.49,
+  32.63,
+  30.28,
+  29.71,
+  30.23,
+  27.44,
+  27.33,
+  26.31
+ ],
+ "ytd": {
+  "2024": 233.21,
+  "2025": 217.84,
+  "2026": 247.59
+ },
+ "ytdTarget": 265.57,
+ "share": {
+  "2024": {
+   "Beger": 22.1,
+   "Toa": 42.2,
+   "Nippon": 12.3,
+   "Captain": 6.4,
+   "ICI": 3.7,
+   "Delta": 4.4,
+   "อื่นๆ": 8.9
+  },
+  "2025": {
+   "Beger": 22.1,
+   "Toa": 44.1,
+   "Nippon": 13.8,
+   "Captain": 7.4,
+   "ICI": 4.3,
+   "Delta": 4.0,
+   "อื่นๆ": 4.3
+  },
+  "2026": {
+   "Beger": 23.1,
+   "Toa": 42.7,
+   "Nippon": 13.7,
+   "Captain": 8.0,
+   "ICI": 4.5,
+   "Delta": 3.9,
+   "อื่นๆ": 4.1
+  }
+ },
+ "mkt": 6.4,
+ "begc": 11.4,
+ "branches": [
+  {
+   "n": "หาดใหญ่",
+   "s": 12.51,
+   "g": 131.9,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "นครสวรรค์",
+   "s": 3.2,
+   "g": 93.2,
+   "new": true,
+   "mc": 3
+  },
+  {
+   "n": "เทพารักษ์",
+   "s": 2.56,
+   "g": 69.8,
+   "new": true,
+   "mc": 4
+  },
+  {
+   "n": "ชลบุรี(อมตะนคร)",
+   "s": 11.86,
+   "g": 37.6,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "บุรีรัมย์",
+   "s": 6.83,
+   "g": 24.6,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "พิษณุโลก",
+   "s": 9.14,
+   "g": 22.1,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "บ่อวิน",
+   "s": 6.13,
+   "g": 19.4,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "บางพูน",
+   "s": 4.73,
+   "g": 18.4,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "สุราษฎร์ธานี",
+   "s": 14.53,
+   "g": 16.1,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "แหลมฉบัง (บางละมุง)",
+   "s": 10.04,
+   "g": 11.3,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "อุดรธานี",
+   "s": 7.25,
+   "g": 9.7,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "อุบลราชธานี",
+   "s": 26.28,
+   "g": 5.9,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "ชัยภูมิ",
+   "s": 7.95,
+   "g": 4.7,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "พระราม 2",
+   "s": 6.01,
+   "g": 4.5,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "ขอนแก่น",
+   "s": 13.51,
+   "g": 4.1,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "บางนา",
+   "s": 2.43,
+   "g": 3.5,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "เชียงใหม่",
+   "s": 9.99,
+   "g": 2.9,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "เชียงราย",
+   "s": 5.84,
+   "g": 2.1,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "กาญจนบุรี",
+   "s": 3.84,
+   "g": 0.1,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "สุรินทร์",
+   "s": 8.78,
+   "g": -0.3,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "มาบตะพุด",
+   "s": 10.46,
+   "g": -4.0,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "อยุธยา",
+   "s": 3.98,
+   "g": -10.8,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "เพชรเกษม",
+   "s": 6.08,
+   "g": -11.6,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "โคราช",
+   "s": 15.68,
+   "g": -11.8,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "รังสิต",
+   "s": 12.51,
+   "g": -15.7,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "บางบัวทอง",
+   "s": 4.91,
+   "g": -18.2,
+   "new": false,
+   "mc": 9
+  },
+  {
+   "n": "ภูเก็ต",
+   "s": 6.32,
+   "g": null,
+   "new": true
+  }
+ ],
+ "togo": {
+  "2024": 4.4,
+  "2025": 6.38,
+  "2026": 10.59
+ },
+ "prodTotal": {
+  "s25": 214.47,
+  "s26": 243.66,
+  "u25": 270767,
+  "u26": 289430
+ },
+ "cat": [
+  {
+   "n": "สีทาภายนอก",
+   "s25": 78.45,
+   "s26": 96.03,
+   "gB": 22.4,
+   "gU": 12.2,
+   "u26": 78642,
+   "u25": 70087
+  },
+  {
+   "n": "สีรองพื้นปูน",
+   "s25": 31.45,
+   "s26": 33.59,
+   "gB": 6.8,
+   "gU": 3.6,
+   "u26": 26819,
+   "u25": 25889
+  },
+  {
+   "n": "สีน้ำมัน",
+   "s25": 25.76,
+   "s26": 29.83,
+   "gB": 15.8,
+   "gU": 8.9,
+   "u26": 65463,
+   "u25": 60134
+  },
+  {
+   "n": "สีน้ำทาภายใน",
+   "s25": 12.67,
+   "s26": 12.79,
+   "gB": 0.9,
+   "gU": -2.0,
+   "u26": 13694,
+   "u25": 13969
+  },
+  {
+   "n": "สีทาฝ้าเพดาน",
+   "s25": 10.14,
+   "s26": 11.69,
+   "gB": 15.4,
+   "gU": 8.8,
+   "u26": 12310,
+   "u25": 11316
+  },
+  {
+   "n": "แม่สีเครื่องผสม",
+   "s25": 9.06,
+   "s26": 10.8,
+   "gB": 19.2,
+   "gU": null,
+   "u26": 0,
+   "u25": 0
+  },
+  {
+   "n": "สีย้อมไม้",
+   "s25": 9.82,
+   "s26": 9.66,
+   "gB": -1.7,
+   "gU": 0.8,
+   "u26": 21215,
+   "u25": 21039
+  },
+  {
+   "n": "สีเคลือบเงาไม้",
+   "s25": 6.9,
+   "s26": 6.87,
+   "gB": -0.5,
+   "gU": 6.3,
+   "u26": 7892,
+   "u25": 7421
+  },
+  {
+   "n": "สีทาหลังคา",
+   "s25": 5.24,
+   "s26": 5.57,
+   "gB": 6.3,
+   "gU": 3.7,
+   "u26": 11386,
+   "u25": 10980
+  },
+  {
+   "n": "ทินเนอร์",
+   "s25": 3.46,
+   "s26": 3.55,
+   "gB": 2.6,
+   "gU": -13.6,
+   "u26": 10839,
+   "u25": 12541
+  },
+  {
+   "n": "สีรองพื้นกันสนิม",
+   "s25": 2.17,
+   "s26": 2.95,
+   "gB": 35.8,
+   "gU": 27.6,
+   "u26": 6536,
+   "u25": 5123
+  },
+  {
+   "n": "สีอีพ็อกซี่",
+   "s25": 2.58,
+   "s26": 2.9,
+   "gB": 12.3,
+   "gU": -5.5,
+   "u26": 1846,
+   "u25": 1953
+  },
+  {
+   "n": "น้ำยา และสารผสม",
+   "s25": 2.44,
+   "s26": 2.79,
+   "gB": 14.1,
+   "gU": 5.3,
+   "u26": 5240,
+   "u25": 4975
+  },
+  {
+   "n": "ระบบป้องกันการรั่วซึม",
+   "s25": 2.87,
+   "s26": 2.76,
+   "gB": -3.9,
+   "gU": 4.5,
+   "u26": 2605,
+   "u25": 2492
+  },
+  {
+   "n": "ฉาบบาง และตกแต่งพื้นผิว",
+   "s25": 2.14,
+   "s26": 2.44,
+   "gB": 13.9,
+   "gU": 14.6,
+   "u26": 6152,
+   "u25": 5367
+  },
+  {
+   "n": "สีทาไฟเบอร์ซีเมนต์",
+   "s25": 2.16,
+   "s26": 2.24,
+   "gB": 3.7,
+   "gU": -1.8,
+   "u26": 2466,
+   "u25": 2511
+  },
+  {
+   "n": "สีทาถนน",
+   "s25": 1.88,
+   "s26": 2.01,
+   "gB": 6.9,
+   "gU": 3.6,
+   "u26": 3401,
+   "u25": 3284
+  },
+  {
+   "n": "ผลิตภัณฑ์ป้องกันแมลง",
+   "s25": 1.95,
+   "s26": 1.74,
+   "gB": -10.8,
+   "gU": -16.8,
+   "u26": 3708,
+   "u25": 4456
+  },
+  {
+   "n": "สีทองคำ",
+   "s25": 1.91,
+   "s26": 1.63,
+   "gB": -15.0,
+   "gU": -1.4,
+   "u26": 2612,
+   "u25": 2650
+  }
+ ],
+ "line": [
+  {
+   "n": "เบเยอร์คูล",
+   "s25": 60.62,
+   "s26": 65.43,
+   "gB": 7.9,
+   "gU": -4.2,
+   "u26": 51389,
+   "u25": 53617
+  },
+  {
+   "n": "กระทิง และ เบนโทน",
+   "s25": 33.97,
+   "s26": 40.85,
+   "gB": 20.2,
+   "gU": 14.1,
+   "u26": 69003,
+   "u25": 60473
+  },
+  {
+   "n": "นาโน",
+   "s25": 25.27,
+   "s26": 25.01,
+   "gB": -1.0,
+   "gU": -8.1,
+   "u26": 22919,
+   "u25": 24948
+  },
+  {
+   "n": "สีงานไม้",
+   "s25": 19.87,
+   "s26": 19.37,
+   "gB": -2.5,
+   "gU": -2.6,
+   "u26": 38562,
+   "u25": 39591
+  },
+  {
+   "n": "เบเยอร์ชิลด์ทาเหล็ก",
+   "s25": 14.57,
+   "s26": 14.95,
+   "gB": 2.6,
+   "gU": -1.3,
+   "u26": 28821,
+   "u25": 29208
+  },
+  {
+   "n": "สีรองพื้น",
+   "s25": 11.79,
+   "s26": 13.64,
+   "gB": 15.8,
+   "gU": 10.1,
+   "u26": 8632,
+   "u25": 7841
+  },
+  {
+   "n": "แม่สีและเครื่องผสมสี",
+   "s25": 9.03,
+   "s26": 10.8,
+   "gB": 19.5,
+   "gU": null,
+   "u26": 0,
+   "u25": 0
+  },
+  {
+   "n": "BegerSuper Hi-Shield",
+   "s25": 1.85,
+   "s26": 9.08,
+   "gB": 390.5,
+   "gU": 342.5,
+   "u26": 11147,
+   "u25": 2519
+  },
+  {
+   "n": "เบเยอร์ชิลด์",
+   "s25": 7.51,
+   "s26": 9.05,
+   "gB": 20.5,
+   "gU": 8.7,
+   "u26": 5925,
+   "u25": 5453
+  },
+  {
+   "n": "เบเยอร์ซินโนเทค",
+   "s25": 7.33,
+   "s26": 7.66,
+   "gB": 4.5,
+   "gU": 2.7,
+   "u26": 13768,
+   "u25": 13406
+  },
+  {
+   "n": "เคมีก่อสร้าง",
+   "s25": 6.89,
+   "s26": 7.53,
+   "gB": 9.2,
+   "gU": 8.2,
+   "u26": 16064,
+   "u25": 14843
+  },
+  {
+   "n": "สีงานอุตสาหกรรม",
+   "s25": 4.82,
+   "s26": 5.15,
+   "gB": 6.9,
+   "gU": -0.5,
+   "u26": 6562,
+   "u25": 6595
+  },
+  {
+   "n": "เบเยอร์เทค",
+   "s25": 0.0,
+   "s26": 3.68,
+   "gB": null,
+   "gU": null,
+   "u26": 3184,
+   "u25": 0
+  },
+  {
+   "n": "เบเยอร์ไดรท์",
+   "s25": 1.95,
+   "s26": 1.74,
+   "gB": -10.8,
+   "gU": -16.8,
+   "u26": 3708,
+   "u25": 4456
+  },
+  {
+   "n": "สีทองคำ",
+   "s25": 1.94,
+   "s26": 1.68,
+   "gB": -13.2,
+   "gU": -0.0,
+   "u26": 2741,
+   "u25": 2742
+  },
+  {
+   "n": "เบเยอร์ชิลด์เอฟเฟ็กซ",
+   "s25": 1.25,
+   "s26": 1.36,
+   "gB": 9.0,
+   "gU": 3.0,
+   "u26": 778,
+   "u25": 755
+  }
+ ],
+ "grade": [
+  {
+   "n": "PREMIUM",
+   "s25": 101.57,
+   "s26": 110.73,
+   "gB": 9.0,
+   "gU": -1.0,
+   "u26": 124120,
+   "u25": 125364
+  },
+  {
+   "n": "STANDARD",
+   "s25": 44.06,
+   "s26": 56.37,
+   "gB": 27.9,
+   "gU": 18.0,
+   "u26": 77000,
+   "u25": 65275
+  },
+  {
+   "n": "ULTRA PREMIUM",
+   "s25": 34.79,
+   "s26": 35.91,
+   "gB": 3.2,
+   "gU": 4.8,
+   "u26": 28589,
+   "u25": 27279
+  },
+  {
+   "n": "ECONOMY",
+   "s25": 29.47,
+   "s26": 34.02,
+   "gB": 15.4,
+   "gU": 8.3,
+   "u26": 53524,
+   "u25": 49423
+  }
+ ],
+ "topProd": [
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL #A 2.5กล",
+   "s25": 16.81,
+   "s26": 18.71,
+   "d": 1.9,
+   "gB": 11.3,
+   "gU": -2.8,
+   "u25": 14419,
+   "u26": 14021
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL DM #A 2.5ก",
+   "s25": 4.91,
+   "s26": 6.06,
+   "d": 1.15,
+   "gB": 23.5,
+   "gU": 7.5,
+   "u25": 2499,
+   "u26": 2687
+  },
+  {
+   "n": "สีรพ.ปูนเก่าและใหม่ กระทิง K1000 5GL",
+   "s25": 4.04,
+   "s26": 4.97,
+   "d": 0.92,
+   "gB": 22.9,
+   "gU": 18.1,
+   "u25": 3746,
+   "u26": 4423
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL #C 2.5กล",
+   "s25": 4.28,
+   "s26": 4.39,
+   "d": 0.11,
+   "gB": 2.6,
+   "gU": -10.4,
+   "u25": 4010,
+   "u26": 3593
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา กระทิง KS800 ขาว 5GL.",
+   "s25": 2.44,
+   "s26": 3.88,
+   "d": 1.44,
+   "gB": 59.3,
+   "gU": 47.8,
+   "u25": 1443,
+   "u26": 2133
+  },
+  {
+   "n": "น้ำยารพ.ปูนเก่าและใหม่ BEGER B-1900 5GL",
+   "s25": 3.38,
+   "s26": 3.71,
+   "d": 0.33,
+   "gB": 9.9,
+   "gU": 7.3,
+   "u25": 1268,
+   "u26": 1361
+  },
+  {
+   "n": "สีรองพื้นปูนใหม่ NANOPRO 9400 5กล",
+   "s25": 4.28,
+   "s26": 3.51,
+   "d": -0.78,
+   "gB": -18.1,
+   "gU": -21.7,
+   "u25": 3273,
+   "u26": 2563
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา N.PROSHIELD #A 2.5กล",
+   "s25": 2.85,
+   "s26": 3.45,
+   "d": 0.6,
+   "gB": 21.2,
+   "gU": 13.0,
+   "u25": 2795,
+   "u26": 3157
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL #B 2.5กล",
+   "s25": 3.49,
+   "s26": 3.31,
+   "d": -0.18,
+   "gB": -5.0,
+   "gU": -16.2,
+   "u25": 3047,
+   "u26": 2553
+  },
+  {
+   "n": "สีรพ.ปูนเก่าและใหม่ BEGER B-2900 5GL",
+   "s25": 2.01,
+   "s26": 3.13,
+   "d": 1.12,
+   "gB": 55.6,
+   "gU": 54.6,
+   "u25": 871,
+   "u26": 1347
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL #D 2.5กล",
+   "s25": 2.96,
+   "s26": 2.94,
+   "d": -0.02,
+   "gB": -0.8,
+   "gU": -13.9,
+   "u25": 3267,
+   "u26": 2812
+  },
+  {
+   "n": "สีน้ำกึ่งเงา N.PROSHIELD 9001 ขาว 5กล",
+   "s25": 2.33,
+   "s26": 2.93,
+   "d": 0.6,
+   "gB": 26.0,
+   "gU": 20.2,
+   "u25": 1044,
+   "u26": 1255
+  }
+ ],
+ "gain": [
+  {
+   "n": "สีน้ำนอก-กึ่งเงา SUPER HI-SHIELD #A 2.5G",
+   "s25": 0.43,
+   "s26": 2.57,
+   "d": 2.14,
+   "gB": 503.3,
+   "gU": 451.9,
+   "u25": 451,
+   "u26": 2489
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL #A 2.5กล",
+   "s25": 16.81,
+   "s26": 18.71,
+   "d": 1.9,
+   "gB": 11.3,
+   "gU": -2.8,
+   "u25": 14419,
+   "u26": 14021
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา B.COOL 2IN1+ #A 9L",
+   "s25": 0.36,
+   "s26": 1.82,
+   "d": 1.46,
+   "gB": 404.5,
+   "gU": 358.3,
+   "u25": 276,
+   "u26": 1265
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา กระทิง KS800 ขาว 5GL.",
+   "s25": 2.44,
+   "s26": 3.88,
+   "d": 1.44,
+   "gB": 59.3,
+   "gU": 47.8,
+   "u25": 1443,
+   "u26": 2133
+  },
+  {
+   "n": "สีน้ำนอก-กึ่งเงา BEGERCOOL DM #A 2.5ก",
+   "s25": 4.91,
+   "s26": 6.06,
+   "d": 1.15,
+   "gB": 23.5,
+   "gU": 7.5,
+   "u25": 2499,
+   "u26": 2687
+  },
+  {
+   "n": "สีรพ.ปูนเก่าและใหม่ BEGER B-2900 5GL",
+   "s25": 2.01,
+   "s26": 3.13,
+   "d": 1.12,
+   "gB": 55.6,
+   "gU": 54.6,
+   "u25": 871,
+   "u26": 1347
+  },
+  {
+   "n": "สีรพ.ปูนใหม่ SUPER HI-SHIELD S-8888 5GL",
+   "s25": 0.23,
+   "s26": 1.16,
+   "d": 0.93,
+   "gB": 402.1,
+   "gU": 361.6,
+   "u25": 164,
+   "u26": 757
+  },
+  {
+   "n": "สีรพ.ปูนเก่าและใหม่ กระทิง K1000 5GL",
+   "s25": 4.04,
+   "s26": 4.97,
+   "d": 0.92,
+   "gB": 22.9,
+   "gU": 18.1,
+   "u25": 3746,
+   "u26": 4423
+  }
+ ],
+ "loss": [
+  {
+   "n": "สีน้ำนอก-กึ่งเงา กระทิง KS500 ขาวมุก 5GL",
+   "s25": 0.92,
+   "s26": 0.02,
+   "d": -0.89,
+   "gB": -97.3,
+   "gU": -97.0,
+   "u25": 541,
+   "u26": 16
+  },
+  {
+   "n": "สีรองพื้นปูนใหม่ DELIGHT E1111 5กล",
+   "s25": 0.88,
+   "s26": 0.03,
+   "d": -0.85,
+   "gB": -96.9,
+   "gU": -97.0,
+   "u25": 502,
+   "u26": 15
+  },
+  {
+   "n": "สีรองพื้นปูนใหม่ NANOPRO 9400 5กล",
+   "s25": 4.28,
+   "s26": 3.51,
+   "d": -0.78,
+   "gB": -18.1,
+   "gU": -21.7,
+   "u25": 3273,
+   "u26": 2563
+  },
+  {
+   "n": "สีน้ำใน-ด้าน BEGERCOOL #A 2.5กล",
+   "s25": 1.66,
+   "s26": 1.03,
+   "d": -0.63,
+   "gB": -37.8,
+   "gU": -40.7,
+   "u25": 2137,
+   "u26": 1268
+  },
+  {
+   "n": "สีรองพื้นปูนใหม่ NANOPROSHIELD 9999 5กล",
+   "s25": 0.6,
+   "s26": 0.01,
+   "d": -0.6,
+   "gB": -98.8,
+   "gU": -98.8,
+   "u25": 343,
+   "u26": 4
+  },
+  {
+   "n": "สีน้ำทาฝ้า BEGERCOOL 3511 ขาว 5กล",
+   "s25": 1.74,
+   "s26": 1.23,
+   "d": -0.51,
+   "gB": -29.4,
+   "gU": -30.0,
+   "u25": 1042,
+   "u26": 729
+  },
+  {
+   "n": "ทินเนอร์ผสมแล็คเกอร์ มอก BEGER M-77 3.7L",
+   "s25": 0.58,
+   "s26": 0.2,
+   "d": -0.38,
+   "gB": -65.8,
+   "gU": -59.6,
+   "u25": 1603,
+   "u26": 647
+  },
+  {
+   "n": "สีน้ำมัน 2IN1 GRIPTECT BR100 ขาว กล",
+   "s25": 2.37,
+   "s26": 2.0,
+   "d": -0.37,
+   "gB": -15.7,
+   "gU": -25.5,
+   "u25": 3677,
+   "u26": 2741
+  }
+ ],
+ "newSku": {
+  "n": 170,
+  "s": 11.27
+ },
+ "skuCount": {
+  "25": 690,
+  "26": 773
+ },
+ "sysMonthly": {
+  "2025": [
+   26.32,
+   25.18,
+   26.78,
+   23.32,
+   22.71,
+   22.76,
+   22.91,
+   22.26,
+   22.23
+  ],
+  "2026": [
+   24.81,
+   25.02,
+   31.27,
+   26.6,
+   27.3,
+   27.22,
+   27.76,
+   27.7,
+   25.98
+  ]
+ }
+};
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const f1=v=>v.toLocaleString('th-TH',{minimumFractionDigits:1,maximumFractionDigits:1});
+const f2=v=>v.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});
+const sg=v=>(v>0?'+':'')+f1(v)+'%';
+const g=(a,b)=>(a/b-1)*100;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pill=(v,lab)=>v==null?`<span class="gpill na">${lab} ใหม่</span>`:`<span class="gpill ${v>=0?'up':'down'}">${lab} ${v>999?'×'+f1(v/100+1):sg(v)}</span>`;
+
+const y26=D.ytd['2026'],y25=D.ytd['2025'],y24=D.ytd['2024'];
+const gY=g(y26,y25), ach=y26/D.ytdTarget*100;
+const sh=D.share, P=D.prodTotal, gB=g(P.s26,P.s25), gU=g(P.u26,P.u25);
+document.getElementById('kpis').innerHTML=`
+ <div class="kpi main"><div class="lab">ยอดขายสะสม ม.ค.–ก.ย. 2569</div><div class="val">${f2(y26)}<small>ล้านบาท</small></div><div class="sub"><span class="chip up">▲ ${sg(gY)}</span> จาก ${f2(y25)} ล้าน ปีก่อน</div></div>
+ <div class="kpi"><div class="lab">เทียบเป้าสะสม</div><div class="val">${f1(ach)}%</div><div class="meter"><i style="width:${Math.min(ach,100)}%"></i></div><div class="sub">เป้าสะสม ${f2(D.ytdTarget)} ล้าน</div></div>
+ <div class="kpi"><div class="lab">ส่วนแบ่งแผนกสี</div><div class="val">${f1(sh['2026'].Beger)}%</div><div class="sub"><span class="chip up">▲ ${f1(sh['2026'].Beger-sh['2025'].Beger)} จุด</span> อันดับ 2 รองจาก TOA</div></div>
+ <div class="kpi"><div class="lab">จำนวนชิ้นที่ขายได้ ม.ค.–ก.ย.</div><div class="val">${sg(gU)}<small>ชิ้น</small></div><div class="sub">${P.u26.toLocaleString('th-TH')} ชิ้น จาก ${P.u25.toLocaleString('th-TH')} ชิ้นปีก่อน · ระบบขายหน้าร้านดูโฮม</div></div>`;
+document.getElementById('insTrend').innerHTML=`ปีนี้โต <b>${sg(gY)}</b> จากปีก่อน และสูงกว่าปี 2567 <b>${sg(g(y26,y24))}</b> ยอดขายรายเดือนสูงกว่าปีก่อนทุกเดือนตั้งแต่ มี.ค. เป็นต้นมา`;
+
+// share stacked
+const brands=[['Beger','var(--beger)'],['Toa','#6b7487'],['Nippon','#97a1b3'],['Captain','#b6bdca'],['ICI','#cdd2db'],['Delta','#dde1e8'],['อื่นๆ','#eceef2']];
+document.getElementById('share').innerHTML=['2024','2025','2026'].map(y=>`<div class="srow"><b>${+y+543}</b><div class="sbar">${brands.map(([k,c],i)=>`<div style="width:${sh[y][k]}%;background:${c};color:${i>1?'#2a3346':'#fff'}" title="${k} ${sh[y][k]}%">${sh[y][k]>=9?sh[y][k]+'%':''}</div>`).join('')}</div></div>`).join('');
+document.getElementById('shareLeg').innerHTML=brands.map(([k,c])=>`<span><i style="background:${c}"></i>${k}</span>`).join('');
+document.getElementById('insShare').innerHTML=`ส่วนแบ่งเบเยอร์ขึ้นจาก <b>${sh['2025'].Beger}%</b> เป็น <b>${sh['2026'].Beger}%</b> ขณะที่ TOA ลดจาก ${sh['2025'].Toa}% เป็น ${sh['2026'].Toa}% · ในสาขากลุ่มนี้ ยอดรวมแผนกสีโต ${sg(D.mkt)} ขณะที่เบเยอร์โต ${sg(D.begc)}`;
+
+// branches
+
+document.getElementById('branches').innerHTML=D.branches.map(b=>{
+  const nm=`<span class="nm" title="${esc(b.n)} · ${f2(b.s)} ล้าน">${b.new?'<span class="star">*</span>':''}${esc(b.n)}${b.new&&b.mc?`<small class="mc"> (${b.mc} เดือน)</small>`:''}</span>`;
+  if(b.g==null) return `<div class="br">${nm}<span class="nb">เปิด ธ.ค. 68 ยังไม่มียอดปีก่อนให้เทียบ · ยอด YTD ${f2(b.s)} ล้าน</span></div>`;
+  const pos=b.g>=0; const w=pos?Math.min(b.g,70):Math.min(-b.g,30);
+  return `<div class="br">${nm}<span class="tr"><span class="b" style="${pos?`left:30%;width:${w}%`:`left:${30-w}%;width:${w}%`};background:${pos?'var(--up)':'var(--down)'}"></span></span><span class="v" style="color:${pos?'var(--up)':'var(--down)'}">${sg(b.g)}</span></div>`}).join('');
+
+// top products dumbbell
+const tmax=Math.max(...D.topProd.map(p=>Math.max(p.s25,p.s26)));
+document.getElementById('top').innerHTML=D.topProd.map(p=>{
+  const a=p.s25/tmax*82,b=p.s26/tmax*82;
+  return `<div class="hb"><span class="nm">${esc(p.n)}</span><span class="tr" title="2568 ${f2(p.s25)} → 2569 ${f2(p.s26)} ล้าน"><i style="width:${b}%"></i><u style="left:${a}%"></u><b style="left:calc(${Math.max(a,b)}% + 8px)">${f2(p.s26)}</b></span><span class="gs">${pill(p.gB,'฿')}${pill(p.gU,'ชิ้น')}</span></div>`}).join('');
+
+// movers
+const mvr=(id,arr,col)=>{const m=Math.max(...arr.map(p=>Math.abs(p.d)));
+ document.getElementById(id).innerHTML=arr.map(p=>`<div class="mr"><span class="nm">${esc(p.n)}${p.s25===0?'<span class="badge">ใหม่</span>':''}</span><span class="tr"><i style="left:0;width:${Math.abs(p.d)/m*100}%;background:${col}"></i></span><span class="v" style="color:${col}">${p.d>0?'+':''}${f2(p.d)}</span></div>`).join('');};
+mvr('gain',D.gain,'var(--up)'); mvr('loss',D.loss,'var(--down)');
+
+// grade
+const gr=D.grade;
+document.getElementById('grade').innerHTML=gr.map(x=>`<div class="grow"><span>${x.n}</span>${pill(x.gB,'฿')}${pill(x.gU,'ชิ้น')}</div>`).join('');
+document.getElementById('insGrade').innerHTML=`กลุ่ม <b>STANDARD</b> โตแรงสุด ทั้งบาทและชิ้น ส่วน <b>PREMIUM</b> ชิ้นใกล้เคียงเดิม (${sg(gr[0].gU)}) แต่บาทโต ${sg(gr[0].gB)} ราคาเฉลี่ยต่อชิ้นจึงสูงขึ้น`;
+
+// talking points
+const L=Object.fromEntries(D.line.map(x=>[x.n,x]));
+document.getElementById('t1').innerHTML=[
+ `ยอดสะสม 9 เดือน <b>${f2(y26)} ล้านบาท</b> โต <b>${sg(gY)}</b> จากปีก่อน`,
+ `ส่วนแบ่งแผนกสีขึ้นเป็น <b>${sh['2026'].Beger}%</b> (+${f1(sh['2026'].Beger-sh['2025'].Beger)} จุด)`,
+ `สาขาที่โตเด่น: <b>หาดใหญ่</b> ${sg(D.branches.find(b=>b.n==='หาดใหญ่').g)}, <b>อมตะนคร</b> ${sg(D.branches.find(b=>b.n==='ชลบุรี(อมตะนคร)').g)}, <b>บุรีรัมย์</b> ${sg(D.branches.find(b=>b.n==='บุรีรัมย์').g)} และ <b>อุบลฯ</b> ยังเป็นสาขายอดสูงสุด`,
+ `สาขา <b>To Go</b> ยอดสะสม ${f2(D.togo['2026'])} ล้าน เพิ่มจาก ${f2(D.togo['2025'])} ล้านปีก่อน (${sg(g(D.togo['2026'],D.togo['2025']))})`].map(s=>`<li>${s}</li>`).join('');
+document.getElementById('t2').innerHTML=[
+ `ยอดขายหน้าร้านในระบบดูโฮมโต <b>${sg(gB)}</b> และจำนวนชิ้นโต <b>${sg(gU)}</b>`,
+ `<b>สีทาภายนอก</b> เป็นหัวรถจักร ยอดเพิ่ม ${f2(D.cat[0].s26-D.cat[0].s25)} ล้าน (${sg(D.cat[0].gB)})`,
+ `<b>Super Hi-Shield</b> โตจาก ${f2(L['BegerSuper Hi-Shield'].s25)} เป็น ${f2(L['BegerSuper Hi-Shield'].s26)} ล้าน และ <b>กระทิง</b> ${sg(L['กระทิง และ เบนโทน'].gB)}`,
+ `${D.newSku.n} รายการที่ไม่มียอดขายช่วงเดียวกันปีก่อน ทำยอดแล้ว ${f2(D.newSku.s)} ล้าน`].map(s=>`<li>${s}</li>`).join('');
+document.getElementById('t3').innerHTML=[
+ `ดันเป้าสะสมให้ถึง 100% ในไตรมาสสุดท้าย (ตอนนี้ ${f1(ach)}%) ด้วยโปรโมชันร่วมช่วงปลายปีและปีใหม่`,
+ `ฟื้นสาขาที่ยอดลดลง: <b>บางบัวทอง รังสิต โคราช เพชรเกษม อยุธยา</b>`,
+ `กลุ่ม <b>นาโน</b> (${sg(L['นาโน'].gB)}) และ <b>สีงานไม้</b> (${sg(L['สีงานไม้'].gB)}) ยอดลดลง ควรวางแผนพื้นที่หน้าชั้นและกิจกรรมร่วมกัน`,
+ `ตรวจสอบสินค้าที่ยอดหายไปเกือบทั้งหมด เช่น กระทิง KS500 ขาวมุก และ DELIGHT E1111 ว่าเลิกจำหน่ายหรือขาดสต็อก`].map(s=>`<li>${s}</li>`).join('');
+
+// charts
+let charts=[];
+function draw(){
+ charts.forEach(c=>c.destroy()); charts=[];
+ const ink=css('--ink'),muted=css('--muted'),line=css('--line'),beg=css('--beger'),dh=css('--dh'),y24c=css('--y24'),y25c=css('--y25'),up=css('--up'),down=css('--down');
+ Chart.defaults.font.family=css('--body'); Chart.defaults.color=muted; Chart.defaults.font.size=12;
+ const mths=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+ const grid={color:line}, nog={display:false};
+ charts.push(new Chart(cTrend,{type:'line',data:{labels:mths,datasets:[
+  {label:'2569',data:D.monthly['2026'],borderColor:beg,backgroundColor:beg+'22',fill:true,borderWidth:3,pointRadius:3,pointBackgroundColor:beg,tension:.3},
+  {label:'2568',data:D.monthly['2025'],borderColor:y25c,borderWidth:2,pointRadius:2,pointBackgroundColor:y25c,tension:.3},
+  ]},
+  options:{maintainAspectRatio:false,layout:{padding:{top:26}},interaction:{mode:'index',intersect:false},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.raw==null?'-':f2(c.raw))+' ล้าน',afterBody:it=>{const i=it[0].dataIndex,a=D.monthly['2026'][i],b=D.monthly['2025'][i];return a!=null&&b?'เทียบปีก่อน '+sg(g(a,b)):''}}}},
+  scales:{x:{grid:nog},y:{grid,min:18,ticks:{callback:v=>v}}}},plugins:[{id:'pct',afterDatasetsDraw(c){const {ctx}=c;ctx.save();ctx.font='700 13px '+css('--body');ctx.textAlign='center';
+   c.getDatasetMeta(0).data.forEach((p,i)=>{const a=D.monthly['2026'][i],b=D.monthly['2025'][i];if(a==null||!b)return;const v=g(a,b);const txt=sg(v);
+     const y=p.y-12;const tw=ctx.measureText(txt).width;const x=Math.max(p.x,c.chartArea.left+tw/2+2);ctx.lineJoin='round';ctx.lineWidth=4;ctx.strokeStyle=css('--card');ctx.strokeText(txt,x,y);ctx.fillStyle=v>=0?up:down;ctx.fillText(txt,x,y);});ctx.restore();}}]}));
+ const valLbl={id:'vl',afterDatasetsDraw(c){const {ctx}=c;ctx.save();ctx.fillStyle=ink;ctx.font='600 13px '+css('--display');ctx.textAlign='center';
+   const dd=c.data.datasets[0].data;c.getDatasetMeta(0).data.forEach((b,i)=>{ctx.fillStyle=ink;ctx.font='600 13px '+css('--display');ctx.fillText(f1(dd[i]),b.x,b.y-24);
+     if(i>0){const v=g(dd[i],dd[i-1]);ctx.font='600 12px '+css('--body');ctx.fillStyle=v>=0?up:down;ctx.fillText(sg(v),b.x,b.y-8);}});ctx.restore();}};
+ charts.push(new Chart(cYtd,{type:'bar',data:{labels:['2567','2568','2569'],datasets:[{data:[y24,y25,y26],backgroundColor:[y24c,y25c,beg],borderRadius:6,barPercentage:.62}]},
+  options:{maintainAspectRatio:false,layout:{padding:{top:40}},plugins:{legend:{display:false},tooltip:{enabled:false}},scales:{x:{grid:nog},y:{display:false,min:0}}},plugins:[valLbl]}));
+ // bubble
+ const lines=D.line.filter(x=>x.gU!=null&&x.gB!=null&&Math.abs(x.gB)<100);
+ const lbl={id:'bl',afterDatasetsDraw(c){const {ctx}=c;ctx.save();ctx.font='500 12px '+css('--body');ctx.fillStyle=ink;
+   const boxes=[];c.getDatasetMeta(0).data.map((p,i)=>[p,i]).sort((u,v)=>lines[v[1]].s26-lines[u[1]].s26).forEach(([p,i])=>{const r=lines[i];if(!(r.s26>=9||r.gB<0||(r.gB>=15&&r.s26>=5)))return;const right=p.x>c.chartArea.right-110;ctx.textAlign=right?'right':'left';
+   const w=ctx.measureText(r.n).width;let x=p.x+(right?-1:1)*(p.options.radius+4),y=p.y+4;const bx=()=>[right?x-w:x,y-11,w,14];
+   let t=0;const hit=()=>boxes.some(q=>{const b=bx();return b[0]<q[0]+q[2]&&b[0]+b[2]>q[0]&&b[1]<q[1]+q[3]&&b[1]+b[3]>q[1]});
+   while(hit()&&t<8){y+=(t%2?-1:1)*14*(Math.floor(t/2)+1);t++;} boxes.push(bx());ctx.fillText(r.n,x,y);});
+   const xa=c.scales.x,ya=c.scales.y; ctx.strokeStyle=muted;ctx.setLineDash([4,4]);ctx.beginPath();
+   const lo=Math.max(xa.min,ya.min),hi=Math.min(xa.max,ya.max);ctx.moveTo(xa.getPixelForValue(lo),ya.getPixelForValue(lo));ctx.lineTo(xa.getPixelForValue(hi),ya.getPixelForValue(hi));ctx.stroke();
+   ctx.setLineDash([]);ctx.strokeStyle=line;ctx.beginPath();ctx.moveTo(xa.getPixelForValue(0),c.chartArea.top);ctx.lineTo(xa.getPixelForValue(0),c.chartArea.bottom);ctx.moveTo(c.chartArea.left,ya.getPixelForValue(0));ctx.lineTo(c.chartArea.right,ya.getPixelForValue(0));ctx.stroke();ctx.restore();}};
+ charts.push(new Chart(cBubble,{type:'bubble',data:{datasets:[{data:lines.map(x=>({x:x.gU,y:x.gB,r:Math.max(4,Math.sqrt(x.s26)*3.6)})),
+   backgroundColor:lines.map(x=>(x.gB>=0?(x.gU>=0?up:beg):down)+'b0'),borderColor:lines.map(x=>x.gB>=0?(x.gU>=0?up:beg):down),borderWidth:1}]},
+  options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{const x=lines[c.dataIndex];return `${x.n}: บาท ${sg(x.gB)} · ชิ้น ${sg(x.gU)} · ${f2(x.s26)} ล้าน`}}}},
+  scales:{x:{min:-20,max:25,grid,title:{display:true,text:'% โตชิ้น'},ticks:{callback:v=>v+'%'}},y:{min:-20,max:30,grid,title:{display:true,text:'% โตบาท'},ticks:{callback:v=>v+'%'}}}},plugins:[lbl]}));
+ // contribution
+ const con=D.line.map(x=>({n:x.n,d:+(x.s26-x.s25).toFixed(2)})).sort((a,b)=>b.d-a.d);
+ const cl={id:'cl',afterDatasetsDraw(c){const {ctx}=c;ctx.save();ctx.font='600 12px '+css('--body');ctx.fillStyle=ink;ctx.textBaseline='middle';
+   c.getDatasetMeta(0).data.forEach((b,i)=>{const v=con[i].d;ctx.textAlign=v>=0?'left':'right';ctx.fillText((v>0?'+':'')+f2(v),b.x+(v>=0?5:-5),b.y)});ctx.restore();}};
+ charts.push(new Chart(cContrib,{type:'bar',data:{labels:con.map(x=>x.n),datasets:[{data:con.map(x=>x.d),backgroundColor:con.map(x=>x.d>=0?up:down),borderRadius:4,barPercentage:.75}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,layout:{padding:{right:44,left:4}},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>(c.raw>0?'+':'')+f2(c.raw)+' ล้านบาท'}}},
+  scales:{x:{grid,min:-2,max:Math.ceil(Math.max(...con.map(x=>x.d))+1),ticks:{callback:v=>v}},y:{grid:nog,ticks:{color:ink,autoSkip:false}}}},plugins:[cl]}));
+ // categories
+ const cats=D.cat.filter(x=>x.gU!=null).slice(0,12);
+ charts.push(new Chart(cCat,{type:'bar',data:{labels:cats.map(x=>x.n),datasets:[{label:'โตบาท',data:cats.map(x=>x.gB),backgroundColor:beg,borderRadius:3},{label:'โตชิ้น',data:cats.map(x=>x.gU),backgroundColor:dh,borderRadius:3}]},
+  options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+' '+sg(c.raw),afterBody:i=>'ยอด 2569: '+f2(cats[i[0].dataIndex].s26)+' ล้าน'}}},
+  scales:{x:{grid:nog,ticks:{color:ink,maxRotation:45,minRotation:0,autoSkip:false}},y:{grid,ticks:{callback:v=>v+'%'}}}}}));
+ charts.push(new Chart(cGrade,{type:'doughnut',data:{labels:gr.map(x=>x.n),datasets:[{data:gr.map(x=>x.s26),backgroundColor:[beg,css('--beger-2'),dh,y24c],borderColor:css('--card'),borderWidth:2}]},
+  options:{maintainAspectRatio:false,cutout:'62%',plugins:{legend:{position:'right',labels:{boxWidth:12,color:ink,generateLabels:c=>c.data.labels.map((l,i)=>({text:`${l} ${f1(gr[i].s26/gr.reduce((a,b)=>a+b.s26,0)*100)}%`,fillStyle:c.data.datasets[0].backgroundColor[i],strokeStyle:'transparent',index:i,fontColor:ink}))}},tooltip:{callbacks:{label:c=>c.label+': '+f2(c.raw)+' ล้าน'}}}}}));
+}
+function setTheme(t){document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('.theme button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));try{localStorage.setItem('bdTheme',t)}catch(e){}}
+let saved='light';try{saved=localStorage.getItem('bdTheme')||'light'}catch(e){}
+setTheme(saved);document.querySelectorAll('.theme button').forEach(b=>b.addEventListener('click',()=>setTheme(b.dataset.t)));
+draw();
+try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});}catch(e){}
+</script>
+
+</body>
+</html>
